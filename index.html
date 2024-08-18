@@ -1,133 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Web Design</title>
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" type="image/png" href="images/ks logo.png">
+    <title>Swethasri's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/ks logo.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-  <header class="header">
-    <a href="#" class="logo"><img src="images/ks logo.png" width="80px"></a>
+    <!-- Header section -->
+    <header class="header">
+        <div id="menu-btn" class="bx bx-menu"></div>
 
-    <nav class="navbar">
-      <a href="#home" class="active">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-    </nav>
+        <a href="#home" class="logo"><img src="images/ks logo.png" alt="logo"></a>
 
-    <div class="bx bx-moon" id="darkMode"></div>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
 
-    <div class='bx bx-menu' id="menu-icon"></div>
-  </header>
-
-  <section class="home" id="home">
-    <div class="home-content">
-      <h3>Hello, I am</h3>
-      <h1>Swethasri</h1>
-      <p>Develop a passion for Learning:)</p>
-      <a href="https://swethasrik.tiiny.site" class="btn">See Resume</a>
-    </div>
-
-    <div class="profession-container">
-      <div class="profession-box">
-        <div class="profession" style="--i:0">
-          <i class='bx bx-laptop'></i>
-          <h3>Web Designer</h3>
+        <div class="follow">
+            <a href="https://instagram.com/swe_srii_._ks" class='bx bxl-instagram'></a>
+            <a href="https://www.linkedin.com/in/swethasri-kalaiselvan-39b429249/" class='bx bxl-linkedin'></a>
+            <a href="https://github.com/SwethasriKalaiselvan" class='bx bxl-github'></a>
+            <a href="https://medium.com/@swethasri2804" class='bx bxl-medium'></a>
         </div>
+    </header>
 
-        <div class="profession" style="--i:1">
-          <i class='bx bx-code-curly'></i>
-          <h3>Java Developer</h3>
+    <!-- Home section -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Hi I'm</h3>
+            <h1>Swetha<span>sri</span></h1>
+            <p>Front-end Developer</p>
+            <!-- <p>Develop a passion for Learning:)</p> -->
+            <a href="#about" class="btn">About Me</a>
         </div>
-
-        <div class="profession" style="--i:2">
-          <i class='bx bx-code-block'></i>
-          <h3>Frontend Developer</h3>
+        <div class="image">
+            <img src="images/home.jpg" alt="home-img">
         </div>
+    </section>
 
-        <div class="profession" style="--i:3">
-          <i class='bx bx-edit'></i>
-          <h3>Content Creator</h3>
+    <!-- About section -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/about.jpg" alt="">
         </div>
+        <div class="about-content">
+            <h2 class="heading">About<span>Me</span></h2>
+            <h3>Hi, I'm here to help your next project!</h3>
+            <p>Highly motivated and dedicated frontend developer in software development. Proven track record of
+                delivering
+                high-quality results and exceeding expectations. Skilled in HTML, CSS and JavaScript with a strong
+                passion for
+                development. Committed to staying up-to-date with industry trends and continuously improving skills.</p>
+            <a href="https://swethasrik.tiiny.site" class="btn">See Resume</a>
+        </div>
+    </section>
 
-        <div class="circle"></div>
-      </div>
-      <div class="overlay"></div>
-    </div>
+    <!-- Service section -->
+    <section class="services" id="services">
+        <h2 class="heading">My<span>Services</span></h2>
+        <div class="services-container">
 
-    <div class="home-img">
-        <img src="images/home.jpg" alt="">
-      </div>
-  </section>
+            <div class="services-box" id="service1">
+                <i class='bx bx-code-block'></i>
+                <h3>Frontend Development</h3>
+                <p>Building websites and web apps that work well and look great. I use HTML, CSS, and JavaScript to
+                    create smooth and responsive user experiences.</p>
+            </div>
 
-  <section class="about" id="about">
-    <div class="about-img">
-      <img src="images/about.jpg" alt="">
-    </div>
+            <div class="services-box" id="service2">
+                <i class='bx bx-code-curly'></i>
+                <h3>Java Development</h3>
+                <p>Creating software applications using Java programming language. I build robust and efficient
+                    solutions that meet business needs.</p>
+            </div>
 
-    <div class="about-content">
-      <h2 class="heading">About<span>Me</span></h2>
-      <h3>Hi, I'm here to help your next project!</h3>
-      <p>Highly motivated and dedicated frontend developer in software development. Proven track record of delivering
-        high-quality results and exceeding expectations. Skilled in HTML, CSS and JavaScript with a strong passion for
-        development. Committed to staying up-to-date with industry trends and continuously improving skills.</p>
-    </div>
-  </section>
+            <div class="services-box" id="service3">
+                <i class='bx bx-laptop'></i>
+                <h3>Web Designing</h3>
+                <p>Designing websites that are visually appealing and easy to use. I create user-friendly interfaces
+                    that help businesses connect with their audience.</p>
+            </div>
 
-  <section class="services" id="services">
-    <h2 class="heading">My<span>Services</span></h2>
-    <div class="services-container">
+            <div class="services-box" id="service4">
+                <i class='bx bx-edit'></i>
+                <h3>Content Creation</h3>
+                <p>Creating engaging content that informs and interests people. I write and produce content that helps
+                    businesses tell their story and reach their goals.</p>
+            </div>
+        </div>
+    </section>
 
-      <div class="services-box" id="service1">
-        <i class='bx bx-code-block'></i>
-        <h3>Frontend Development</h3>
-        <p>Building websites and web apps that work well and look great. I use HTML, CSS, and JavaScript to create smooth and responsive user experiences.</p>
-      </div>
+    <section class="contact" id="contact">
+        <div class="contact-area">
+            <h2 class="heading">Contact<span>Me</span></h2>
+            <h3>Get in touch with me!!</h3>
+            <div class="contact-content">
+                <a href="https://instagram.com/swe_srii_._ks"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.linkedin.com/in/swethasri-kalaiselvan-39b429249/"><i
+                        class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/SwethasriKalaiselvan"><i class='bx bxl-github'></i></a>
+                <a href="https://medium.com/@swethasri2804"><i class='bx bxl-medium-square'></i></a>
+            </div>
+            <p>Do what you can, with what you have, where you are.
+                <br>- Theodore Roosevelt
+            </p>
+        </div>
+    </section>
 
-      <div class="services-box" id="service2">
-        <i class='bx bx-code-curly'></i>
-        <h3>Java Development</h3>
-        <p>Creating software applications using Java programming language. I build robust and efficient solutions that meet business needs.</p>
-      </div>
-
-      <div class="services-box" id="service3">
-        <i class='bx bx-laptop'></i>
-        <h3>Web Designing</h3>
-        <p>Designing websites that are visually appealing and easy to use. I create user-friendly interfaces that help businesses connect with their audience.</p>
-      </div>
-
-      <div class="services-box" id="service4">
-        <i class='bx bx-edit'></i>
-        <h3>Content Creation</h3>
-        <p>Creating engaging content that informs and interests people. I write and produce content that helps businesses tell their story and reach their goals.</p>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="contact" id="contact">
-    <div class="contact-area">
-      <h2 class="heading">Contact<span>Me</span></h2>
-      <h3>Get in touch with me!!</h3>
-      <div class="contact-content">
-        <a href="https://instagram.com/swe_srii_._ks"><i class='bx bxl-instagram'></i></a>
-        <a href="https://www.linkedin.com/in/swethasri-kalaiselvan-39b429249/"><i class='bx bxl-linkedin'></i></a>
-        <a href="https://github.com/SwethasriKalaiselvan"><i class='bx bxl-github'></i></a>
-        <a href="https://medium.com/@swethasri2804"><i class='bx bxl-medium-square'></i></a>
-      </div>
-      <p>Do what you can, with what you have, where you are.
-        <br>- Theodore Roosevelt
-      </p>
-    </div>
-  </section>
-
-  <script src="script.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
