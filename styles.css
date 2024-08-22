@@ -10,10 +10,10 @@
 }
 
 :root {
-    --text-color: #fdfdfd;
-    --main-color: rgb(41, 105, 148);
+    --text-color: #010101;
+    --main-color: #926F34;
     --white-color: #fdfdfd;
-    --border-color: 2px solid rgb(41, 105, 148);
+    --border-color: 5px solid #926F34;
 }
 
 html {
@@ -21,6 +21,7 @@ html {
 }
 
 body {
+    background-image:  linear-gradient(to left, rgb(211, 225, 255) , rgb(239, 239, 145));
     background-color: black;
     overflow: hidden;
     color: var(--text-color);
@@ -41,8 +42,8 @@ body.active {
 }
 
 section {
-    padding: 70px;
-    margin: 0 70px;
+    margin: 0 90px;
+    padding: 50px;
     max-width: 2000px;
     text-align: center;
 }
@@ -52,25 +53,25 @@ header {
     top: 0;
     left: -250px;
     height: 100vh;
-    border-right: 2px solid var(--main-color);
+    border-right: var(--border-color);
     width: 250px;
     padding: 20px 20px;
     text-align: center;
     align-items: center;
     display: flex;
     text-align: center;
-    justify-content: space-between;
     flex-flow: column;
 }
 
 .header .navbar {
     width: 100%;
+    padding-top: 100px;
 }
 
 .header .navbar a {
     display: block;
     text-transform: uppercase;
-    color: var(--white-color);
+    color: var(--text-color);
     font-size: 25px;
     font-weight: 550;
     padding: 10px;
@@ -81,19 +82,7 @@ header {
 .header .navbar a:hover {
     background-color: var(--main-color);
     color: var(--white-color);
-    border-radius: 50px;
-}
-
-.header .follow a {
-    font-size: 35px;
-    margin: 0 5px;
-    cursor: pointer;
-    color: var(--white-color);
-    transition: 0.5s ease-in-out;
-}
-
-.header .follow a:hover {
-    transform: rotate(360deg);
+    border-radius: 40px;
 }
 
 #menu-btn {
@@ -106,7 +95,7 @@ header {
     font-size: 30px;
     border-right: var(--border-color);
     border-bottom: var(--border-color);
-    color: var(--white-color);
+    color: var(--text-color);
     cursor: pointer;
 }
 
@@ -233,9 +222,9 @@ span {
 }
 
 .services-container .services-box {
-    flex: 2 2 60rem;
-    padding: 30px 10px 20px;
-    border-radius: 40px;
+    flex: 2 2 400px;
+    padding: 30px 20px 20px;
+    border-radius: 30px;
     text-align: center;
     align-items: center;
     border: var(--border-color);
@@ -250,7 +239,50 @@ span {
 
 .services-box i {
     font-size: 40px;
-    color: var(--white-color);
+    color: var(--text-color);
+}
+
+.portfolio {
+    align-items: center;
+    margin-top: 100px;
+    min-height: 100vh;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.portfolio .portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.portfolio-container .portfolio-box {
+    flex: 2 2 500px;
+    padding: 30px 20px 20px;
+    border-radius: 30px;
+    text-align: center;
+    align-items: center;
+    border: var(--border-color);
+    transition: 0.5s ease;
+}
+
+.portfolio-container .portfolio-box:hover {
+    transform: scale(1.05);
+    cursor: default;
+}
+
+.portfolio-box i {
+    font-size: 40px;
+    padding-top: 20px;
+    color: var(--text-color);
+}
+
+.portfolio-box i:hover {
+    cursor: pointer;
+    color: var(--text-color);
 }
 
 .contact {
@@ -268,20 +300,24 @@ span {
     padding-bottom: 25px;
 }
 
+.contact-area .contact-content .fa-brands  {
+    font-size: 50px;
+}
+
 .contact-area .contact-content i {
-    font-size: 70px;
+    font-size: 60px;
 }
 
 .contact-area .contact-content a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     border: 5px solid var(--main-color);
     border-radius: 50%;
     color: var(--main-color);
-    margin: 5px 15px 30px;
+    padding: 30px 15px 30px;
     transition: 0.8s ease-out;
 }
 
@@ -296,11 +332,12 @@ span {
     text-align: center;
     justify-content: center;
     padding: 20px;
+    background-color: var(--main-color);
 }
 
 .box-container .box i {
     font-size: 25px;
-    color: var(--main-color);
+    color: var(--text-color);
 }
 
 .box-container .box p {
@@ -313,7 +350,7 @@ span {
     padding: 10px;
     font-size: 20px;
     cursor: default;
-    background-color:var(--main-color);
+    background-color: var(--main-color);
 }
 
 .credit a {
@@ -321,5 +358,5 @@ span {
 }
 
 .credit a:hover {
-    color:black;
+    color: black;
 }
