@@ -10,8 +10,9 @@
 }
 
 :root {
-    --text-color: #010101;
+    --text-color: #fdfdfd;
     --main-color: #926F34;
+    --bg-color: #000000;
     --white-color: #fdfdfd;
     --border-color: 5px solid #926F34;
 }
@@ -21,7 +22,7 @@ html {
 }
 
 body {
-    background-image:  linear-gradient(to left, rgb(211, 225, 255) , rgb(239, 239, 145));
+    background-image:  linear-gradient(to right, rgb(0, 0, 0) , rgb(27, 26, 64));
     background-color: black;
     overflow: hidden;
     color: var(--text-color);
@@ -91,7 +92,7 @@ header {
     right: -51px;
     height: 45px;
     width: 50px;
-    line-height: 45px;
+    line-height: 40px;
     font-size: 30px;
     border-right: var(--border-color);
     border-bottom: var(--border-color);
@@ -107,8 +108,8 @@ header {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 40px;
     gap: 30px;
-    min-height: 100vh;
 }
 
 .home .image {
@@ -165,7 +166,6 @@ header {
 .heading {
     font-size: 60px;
     text-align: center;
-    padding-bottom: 10px;
 }
 
 .line {
@@ -189,7 +189,6 @@ span {
     align-items: center;
     flex-wrap: wrap;
     gap: 40px;
-    min-height: 100vh;
 }
 
 .about-content {
@@ -209,7 +208,6 @@ span {
 
 .services {
     align-items: center;
-    min-height: 100vh;
 }
 
 .services .services-container {
@@ -232,7 +230,8 @@ span {
 }
 
 .services-container .services-box:hover {
-    transform: scale(1.05);
+    transform: scale(1.08);
+    border: var(--border-color);
     background: var(--main-color);
     cursor: default;
 }
@@ -245,7 +244,6 @@ span {
 .portfolio {
     align-items: center;
     margin-top: 100px;
-    min-height: 100vh;
     padding-left: 80px;
     padding-right: 80px;
 }
@@ -253,15 +251,33 @@ span {
 .portfolio .portfolio-container {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 20px;
     justify-content: center;
     text-align: center;
     align-items: center;
     gap: 50px;
 }
 
+.portfolio-container #portfolio1 {
+    color: var(--white-color);
+}
+
+.portfolio-container #portfolio2 {
+    color: var(--white-color);
+}
+
+.portfolio-container #portfolio3 {
+    color: var(--white-color);
+}
+
+.portfolio-container #portfolio4 {
+    color: var(--white-color);
+}
+
 .portfolio-container .portfolio-box {
     flex: 2 2 500px;
     padding: 30px 20px 20px;
+    background-size: cover;
     border-radius: 30px;
     text-align: center;
     align-items: center;
@@ -270,23 +286,22 @@ span {
 }
 
 .portfolio-container .portfolio-box:hover {
-    transform: scale(1.05);
     cursor: default;
+    transform: scale(1.06);
 }
 
 .portfolio-box i {
     font-size: 40px;
     padding-top: 20px;
-    color: var(--text-color);
+    color: var(--white-color);
 }
 
 .portfolio-box i:hover {
     cursor: pointer;
-    color: var(--text-color);
+    color: var(--main-color);
 }
 
 .contact {
-    min-height: 70vh;
     justify-content: center;
     align-items: center;
 }
@@ -301,15 +316,23 @@ span {
 }
 
 .contact-area .contact-content .fa-brands  {
-    font-size: 50px;
+    font-size: 55px;
 }
 
 .contact-area .contact-content i {
     font-size: 60px;
 }
 
+.contact-content {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+
 .contact-area .contact-content a {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 90px;
@@ -332,12 +355,13 @@ span {
     text-align: center;
     justify-content: center;
     padding: 20px;
-    background-color: var(--main-color);
+    background-color: var(--bg-color);
+    color: var(--white-color);
 }
 
 .box-container .box i {
     font-size: 25px;
-    color: var(--text-color);
+    color: var(--white-color);
 }
 
 .box-container .box p {
@@ -350,7 +374,8 @@ span {
     padding: 10px;
     font-size: 20px;
     cursor: default;
-    background-color: var(--main-color);
+    background-color: var(--bg-color);
+    color: var(--white-color);
 }
 
 .credit a {
