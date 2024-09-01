@@ -11,10 +11,11 @@
 
 :root {
     --text-color: #fdfdfd;
-    --main-color: #926F34;
+    --main-color: #866428;
     --bg-color: #000000;
     --white-color: #fdfdfd;
-    --border-color: 5px solid #926F34;
+    --shadow-color: #866428;
+    --border-color: 5px solid #866428;
 }
 
 html {
@@ -22,8 +23,7 @@ html {
 }
 
 body {
-    background-image:  linear-gradient(to right, rgb(0, 0, 0) , rgb(27, 26, 64));
-    background-color: black;
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(16, 16, 41));
     overflow: hidden;
     color: var(--text-color);
     transition: 0.2s linear;
@@ -44,7 +44,8 @@ body.active {
 
 section {
     margin: 0 90px;
-    padding: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     max-width: 2000px;
     text-align: center;
 }
@@ -123,7 +124,7 @@ header {
 }
 
 .home .content {
-    flex: 1 1 400px;
+    flex: 1 1 500px;
 }
 
 .home .content h3 {
@@ -169,7 +170,7 @@ header {
 }
 
 .line {
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
     padding-bottom: 25px;
 }
@@ -200,10 +201,16 @@ span {
 }
 
 .about-img img {
-    height: 450px;
-    width: 400px;
+    height: 550px;
+    width: 500px;
     padding: 30px;
     border: var(--border-color);
+}
+
+@media (max-width:1136px) {
+    .about {
+        flex-direction: column-reverse;
+    }
 }
 
 .services {
@@ -216,89 +223,66 @@ span {
     justify-content: center;
     text-align: center;
     align-items: center;
-    gap: 30px;
+    gap: 90px;
 }
 
 .services-container .services-box {
     flex: 2 2 400px;
-    padding: 30px 20px 20px;
-    border-radius: 30px;
+    padding: 15px 20px 20px;
     text-align: center;
     align-items: center;
     border: var(--border-color);
     transition: 0.5s ease;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .services-container .services-box:hover {
     transform: scale(1.08);
-    border: var(--border-color);
-    background: var(--main-color);
     cursor: default;
 }
 
-.services-box i {
+.services-box i,a {
     font-size: 40px;
     color: var(--text-color);
 }
 
 .portfolio {
     align-items: center;
-    margin-top: 100px;
-    padding-left: 80px;
-    padding-right: 80px;
 }
 
 .portfolio .portfolio-container {
     display: flex;
-    flex-wrap: wrap;
-    padding-top: 20px;
+    flex-wrap:wrap;
     justify-content: center;
     text-align: center;
     align-items: center;
-    gap: 50px;
+    gap: 60px;
 }
 
-.portfolio-container #portfolio1 {
-    color: var(--white-color);
-}
-
-.portfolio-container #portfolio2 {
-    color: var(--white-color);
-}
-
-.portfolio-container #portfolio3 {
-    color: var(--white-color);
-}
-
-.portfolio-container #portfolio4 {
-    color: var(--white-color);
-}
-
-.portfolio-container .portfolio-box {
-    flex: 2 2 500px;
-    padding: 30px 20px 20px;
-    background-size: cover;
-    border-radius: 30px;
-    text-align: center;
-    align-items: center;
+.portfolio-container .portfolio-box img {
     border: var(--border-color);
-    transition: 0.5s ease;
+    padding: 15px;
+    width: 450px;
+    height: 300px;
+    transition: 0.3s ease-in-out;
 }
 
-.portfolio-container .portfolio-box:hover {
-    cursor: default;
-    transform: scale(1.06);
-}
-
-.portfolio-box i {
-    font-size: 40px;
-    padding-top: 20px;
+.portfolio-container .portfolio-box .button {
+    font-size: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 25px;
+    padding-left: 25px;
     color: var(--white-color);
+    border-radius: 30px;
+    border: 3.3px solid var(--main-color);
+    transition: 0.3s ease-in;
 }
 
-.portfolio-box i:hover {
+.portfolio-container .portfolio-box .button:hover {
     cursor: pointer;
-    color: var(--main-color);
+    transform: scale(1.05);
 }
 
 .contact {
@@ -315,7 +299,7 @@ span {
     padding-bottom: 25px;
 }
 
-.contact-area .contact-content .fa-brands  {
+.contact-area .contact-content .fa-brands {
     font-size: 55px;
 }
 
@@ -372,16 +356,17 @@ span {
 .credit {
     text-align: center;
     padding: 10px;
-    font-size: 20px;
+    font-size: 10px;
     cursor: default;
     background-color: var(--bg-color);
     color: var(--white-color);
 }
 
 .credit a {
-    color: var(--white-color);
+    color: var(--main-color);
+    font-size: 10px;
 }
 
 .credit a:hover {
-    color: black;
+    color: white;
 }
