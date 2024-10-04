@@ -23,7 +23,10 @@ Technologies Used
 
 Live Demo
 
-View the live portfolio website at swethasrik.netlify.app
+View the live portfolio website at [swethasrik.netlify.app](https://swethasrik.netlify.app/)
+
+![image](https://github.com/user-attachments/assets/55504fcd-f243-4d44-adbf-8cb0d55ab0b3)
+
 
 Contact
 
