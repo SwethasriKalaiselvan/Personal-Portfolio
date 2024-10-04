@@ -30,4 +30,4 @@ View the live portfolio website at [swethasrik.netlify.app](https://swethasrik.n
 
 Contact
 
-Feel free to reach out to me at mailto:swethasri2804@gmail.com or connect with me on https://www.linkedin.com/in/swethasri-kalaiselvan-39b429249/
+Feel free to reach out to me at mailto:swethasri2804@gmail.com
