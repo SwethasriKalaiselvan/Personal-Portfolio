@@ -1,3 +1,5 @@
+# Personal Portfolio
+
 A professionally designed and developed personal portfolio website built using HTML, CSS, and JavaScript.
 
 About
@@ -18,3 +20,11 @@ Technologies Used
 - HTML5
 - CSS3
 - JavaScript
+
+Live Demo
+
+View the live portfolio website at swethasrik.netlify.app
+
+Contact
+
+Feel free to reach out to me at mailto:swethasri2804@gmail.com or connect with me on https://www.linkedin.com/in/swethasri-kalaiselvan-39b429249/
